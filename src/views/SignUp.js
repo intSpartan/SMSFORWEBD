@@ -127,7 +127,9 @@ function SignUp(props) {
               />
             </div>
             <a href="#" style={{ marginTop: "6px" }}>
-              <input type="button" value="Sign Up" onClick={register} />
+              <input type="button" value="Sign Up" onClick={() => {
+              navigate("/log/login");
+            }} />
             </a>
             <div>
               <input type="checkbox" name="Remember_me" id="Remember_me" style={{ visibility : "none", display: "none"}} onChange={rememberMeHandler}/>

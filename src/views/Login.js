@@ -90,7 +90,9 @@ function Login({ setMainUser }) {
                 Signup here
               </a>
               <a href="#" style={{ marginTtop: "6px" }}>
-                <input type="button" value="Log in" onClick={login} />
+                <input type="button" value="Log in"  onClick={() => {
+              navigate("/dashboard");
+            }}/>
               </a>
             </div>
           </form>

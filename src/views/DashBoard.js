@@ -6,7 +6,7 @@ export default function Dashboard() {
   const navigate = useNavigate();
   const isLogged = sessionStorage.getItem("isLogged") || false;
 
-  if (isLogged)
+  // if (isLogged)
     return (
       <div className="Dashboard__main">
         <nav className="navbar_ navbar_-expand-lg navbar_-light">
@@ -70,8 +70,8 @@ export default function Dashboard() {
       </div>
     );
 
-  else
-    return (
-      <div>Error 405</div>
-    )
+  // else
+  //   return (
+  //     <div>Error 405</div>
+  //   )
 }
