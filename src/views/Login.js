@@ -9,7 +9,6 @@ import Footer from "../utils/Footer";
 import Navbar from "../utils/NavBar";
 
 function Login({ setMainUser }) {
-  const baseUrl = process.env.baseURL || "http://localhost:5000";
   const navigate = useNavigate();
 
   const emailR = useRef(null);
@@ -44,7 +43,7 @@ function Login({ setMainUser }) {
       password: passwdR.current.value,
     }));
     axios
-      .post( baseUrl + "/login", {
+      .post("/login", {
         email: emailR.current.value,
         password: passwdR.current.value,
       })

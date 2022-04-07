@@ -9,7 +9,6 @@ import insta_img from "../static/images/instagram.png";
 import git_img from "../static/images/github.png";
 
 export const Contact = () => {
-  const baseUrl = process.env.baseURL || "http://localhost:5000";
   const IntialState = {
     name: "",
     email: "",
@@ -34,7 +33,7 @@ export const Contact = () => {
     }
 
     if (flag) {
-      axios.post( baseUrl+ "/contactUs", contactMssg).then(response => {
+      axios.post("/contactUs", contactMssg).then(response => {
           console.log(response);
         })
         .catch(error => {
