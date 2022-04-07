@@ -2,14 +2,12 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
-import dotenv from "dotenv";
 
 import LOGIN_ROUTE from "./Routes/login.js";
 import REGISTER_ROUTE from "./Routes/register.js";
 import ABOUT_ROUTE from './Routes/about.js';
 
 const app = express();
-dotenv.config({ path : './config.env' });
 
 app.use(
   bodyParser.urlencoded({
@@ -25,7 +23,8 @@ app.use(
 );
 app.use(cors());
 
-const MONGO_URI = process.env.DATABASE;  
+const MONGO_URI =
+  "mongodb+srv://karthik:qwerty1234@sms.pwipb.mongodb.net/SMS?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose
