@@ -8,6 +8,7 @@ import Navbar from "../utils/NavBar";
 import Footer from "../utils/Footer";
 
 function SignUp(props) {
+  const baseUrl = process.env.baseURL || "http://localhost:5000";
   const navigate = useNavigate();
   const nameR = useRef(null);
   const emailR = useRef(null);
@@ -54,7 +55,7 @@ function SignUp(props) {
       user.password &&
       user.password === user.reEnterPassword
     ) {
-      axios.post("http://localhost:5000/register", user).then((res) => {
+      axios.post(baseUrl + "/register", user).then((res) => {
         alert(res.data.message);
         if(res.status == 201){
           navigate("/dashboard");

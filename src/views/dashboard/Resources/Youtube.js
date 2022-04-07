@@ -105,7 +105,7 @@ export default function Youtube() {
             <div
               className="yt__back"
               onClick={() => {
-                navigate("/utils/youtube");
+                navigate("/dashboard/youtube");
                 setMode(!mode);
               }}
             >
