@@ -8,7 +8,7 @@ export default function About() {
     <div className="About__main">
       <nav className="about__navbar about__navbar-expand-lg about__navbar-light">
         <div className="about__contact-us">About Us </div>
-        <a href="#" className="about__logout">
+        <a href="/" className="about__logout">
           <img src={back_img} className="about__logout-img"></img>
           <div
             className="about__logout about__text"
