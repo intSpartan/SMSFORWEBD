@@ -36,11 +36,7 @@ export default function About() {
           </p>
           <ul className="about__links">
             <li>
-              <a href="#">Gallery</a>
-            </li>
-            <div className="about__vertical-line"></div>
-            <li>
-              <a href="#">Contact Us</a>
+              <a href="/about/contact">Contact Us</a>
             </li>
             <br />
             <br />
