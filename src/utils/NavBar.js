@@ -38,9 +38,7 @@ function Navbar(props) {
           </button>
           <div className="subnav-content">
             <div className="subnav-trapezoid">
-              <a href={about_link}>About usss</a>
-              <a href="./dashboard/gallery"></a>
-              <a href="#Services">Sub menu3</a>
+              <a href={about_link}>About The Team</a>
             </div>
           </div>
         </div>
